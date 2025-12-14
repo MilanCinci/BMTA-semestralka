@@ -2,48 +2,67 @@ package com.example.quizmaster.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.quizmaster.R
-import com.example.quizmaster.view.CategoryAdapter
-import com.example.quizmaster.viewmodel.CategoryViewModel
 
 /**
  * Hlavní aktivita aplikace. Zobrazuje seznam kategorií kvízu pomocí RecyclerView
  * a umožňuje přechod do QuizActivity po výběru kategorie
  */
-class MainActivity : AppCompatActivity()
-{
-    /** ViewModel poskytující seznam dostupných kategorií. */
-    private lateinit var viewModel: CategoryViewModel
+class MainActivity : AppCompatActivity() {
 
-    /**
-     * Metoda slouží k volaní při vytvoření aktivity
-     *
-     * @param savedInstanceState Uložený stav aktivity
-     */
-    override fun onCreate(savedInstanceState: Bundle?)
-    {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Předpokládá se, že layout activity_main.xml byl aktualizován (viz níže)
         setContentView(R.layout.activity_main)
 
-        viewModel = CategoryViewModel(this)
+        // Skryje horní lištu, protože nadpis "QuizMaster" je v layoutu
+        supportActionBar?.hide()
 
-        // Nastavení RecyclerView pro zobrazení kategorií
-        val recycler = findViewById<RecyclerView>(R.id.recyclerCategories)
-        recycler.layoutManager = LinearLayoutManager(this)
+        // 1. Odkazy na UI prvky
+        val btnCategories = findViewById<Button>(R.id.btnCategories)
+        val btnHistory = findViewById<Button>(R.id.btnHistory)
+        val btnDarkModeToggle = findViewById<ImageButton>(R.id.btnDarkModeToggle)
 
-        // Naslouchání pro seznam kategorií a aktualizace adapteru
-        viewModel.categories.observe(this)
-        { list ->
-            recycler.adapter = CategoryAdapter(list)
-            { category ->
-                // Po kliknutí na kategorii se spustí QuizActivity
-                val intent = Intent(this, QuizActivity::class.java)
-                intent.putExtra("category", category)
-                startActivity(intent)
-            }
+        // 2. Nastavení Listenerů
+
+        // Tlačítko pro Kategorie: Spustí aktivitu se seznamem kategorií
+        btnCategories.setOnClickListener {
+            // POZNÁMKA: CategoryListActivity musí být vytvořena uživatelem.
+            startActivity(Intent(this, CategoryListActivity::class.java))
         }
+
+        // Tlačítko pro Historii: Spustí existující HistoryActivity
+        btnHistory.setOnClickListener {
+            startActivity(Intent(this, HistoryActivity::class.java))
+        }
+
+        // Tlačítko pro přepnutí tmavého/světlého režimu (Moon icon)
+        btnDarkModeToggle.setOnClickListener {
+            toggleDarkMode()
+        }
+    }
+
+    /**
+     * Přepne mezi světlým a tmavým režimem pomocí AppCompatDelegate.
+     */
+    private fun toggleDarkMode() {
+        // Získá aktuální noční režim konfigurace
+        val currentNightMode = resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK
+
+        // Zjistí, zda je aktuálně aktivní tmavý režim (UI_MODE_NIGHT_YES)
+        val newMode = if (currentNightMode == android.content.res.Configuration.UI_MODE_NIGHT_YES) {
+            AppCompatDelegate.MODE_NIGHT_NO // Přepnout na světlý režim
+        } else {
+            AppCompatDelegate.MODE_NIGHT_YES // Přepnout na tmavý režim
+        }
+
+        // Aplikuje nový režim. Aplikace se automaticky restartuje.
+        AppCompatDelegate.setDefaultNightMode(newMode)
+
+        // Doporučení: Pro zachování režimu po restartu telefonu by se měla hodnota newMode uložit do SharedPreferences.
     }
 }

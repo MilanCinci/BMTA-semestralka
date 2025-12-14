@@ -22,6 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".view.HistoryActivity" />
+        <activity android:name=".view.QuizActivity" />
+        <activity android:name=".view.CategoryListActivity" />
     </application>
 
 </manifest>

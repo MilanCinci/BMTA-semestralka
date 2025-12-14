@@ -28,6 +28,9 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
     /** LiveData aktuálního indexu otázky */
     val currentIndex = MutableLiveData(0)
 
+    /** Celkový počet otázek pro kontrolu v aktivitě */
+    val totalQuestions: Int = questions.size
+
     /** LiveData počtu správných odpovědí */
     val correctCount = MutableLiveData(0)
 
@@ -44,6 +47,12 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
      *
      * @param selectedIndex Index odpovědi, kterou uživatel zvolil
      */
+    /**
+     * Metoda slouží k vyhodnocování odpovědi uživatele a aktualizuje počet správných odpovědí.
+     * Posune se na další otázku, pokud ještě existuje
+     *
+     * @param selectedIndex Index odpovědi, kterou uživatel zvolil
+     */
     fun answerQuestion(selectedIndex: Int)
     {
         if (selectedIndex == getCurrentQuestion().correctIndex)
@@ -51,7 +60,7 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
             correctCount.value = correctCount.value!! + 1
         }
 
-        if (currentIndex.value!! < questions.size - 1)
+        if (currentIndex.value!! < questions.size)
         {
             currentIndex.value = currentIndex.value!! + 1
         }

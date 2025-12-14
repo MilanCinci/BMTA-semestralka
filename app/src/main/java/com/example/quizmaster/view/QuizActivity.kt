@@ -67,10 +67,14 @@ class QuizActivity : AppCompatActivity() {
                 // Vyhodnocení zvolené odpovědi
                 viewModel.answerQuestion(index)
 
-                // Kontrola, zda se má zobrazit další otázka
-                if (viewModel.currentIndex.value!! == viewModel.correctCount.value!! + viewModel.currentIndex.value!!) {
+                // Kvíz pokračuje, pokud je aktuální index stále menší než celkový počet otázek
+                if (viewModel.currentIndex.value!! < viewModel.totalQuestions)
+                {
                     showQuestion()
-                } else {
+                }
+
+                else
+                {
                     // Konec kvízu – uložení výsledku a přechod na historii
                     viewModel.saveResult()
                     startActivity(Intent(this, HistoryActivity::class.java))
