@@ -9,7 +9,7 @@ import com.example.quizmaster.R
 import com.example.quizmaster.model.QuizResult
 
 /**
- * RecyclerView adapter pro zobrazení historie výsledků kvízů.
+ * RecyclerView adapter pro zobrazení historie výsledků kvízů
  *
  * @param history Seznam výsledků kvízů
  */

@@ -11,7 +11,7 @@ import com.example.quizmaster.viewmodel.QuizViewModel
 
 /**
  * Aktivita zodpovědná za průběh kvízu. Zobrazuje otázky a odpovědi pro vybranou kategorii,
- * zpracovává odpovědi uživatele a je zodpovědná za správu výsledků kvízu.
+ * zpracovává odpovědi uživatele a je zodpovědná za správu výsledků kvízu
  */
 class QuizActivity : AppCompatActivity() {
 
@@ -20,7 +20,7 @@ class QuizActivity : AppCompatActivity() {
 
     /**
      * Metoda volaná při vytvoření aktivity.
-     * Inicializuje ViewModel, UI prvky a obsluhu kliknutí.
+     * Inicializuje ViewModel, UI prvky a obsluhu kliknutí
      *
      * @param savedInstanceState Uložený stav aktivity
      */
@@ -34,6 +34,9 @@ class QuizActivity : AppCompatActivity() {
         // Inicializace ViewModelu pro danou kategorii
         viewModel = QuizViewModel(this, category)
 
+        // TextView pro zobrazení průběhu
+        val questionCounter = findViewById<TextView>(R.id.questionCounter)
+
         // TextView pro zobrazení textu otázky
         val questionText = findViewById<TextView>(R.id.questionText)
 
@@ -46,16 +49,25 @@ class QuizActivity : AppCompatActivity() {
         )
 
         /**
-         * Metoda slouží k zobrazení aktuální otázky a nastavení textu odpovědí.
+         * Metoda slouží k zobrazení aktuální otázky a nastavení textu odpovědí
          */
         fun showQuestion() {
             val q = viewModel.getCurrentQuestion()
             questionText.text = q.question
+
+            // Aktualizace počítadla (např. 3 / 15)
+            val currentNumber = (viewModel.currentIndex.value ?: 0) + 1
+            questionCounter.text = "$currentNumber / ${viewModel.totalQuestions}"
+
             buttons.forEachIndexed { index, button ->
-                if (index < q.options.size) {
+                if (index < q.options.size)
+                {
                     button.text = q.options[index]
                     button.visibility = View.VISIBLE
-                } else {
+                }
+
+                else
+                {
                     button.visibility = View.GONE
                 }
             }
@@ -75,9 +87,13 @@ class QuizActivity : AppCompatActivity() {
 
                 else
                 {
-                    // Konec kvízu – uložení výsledku a přechod na historii
+                    // Konec kvízu – uložení výsledku a přechod na vyhodnocení kvízu
                     viewModel.saveResult()
-                    startActivity(Intent(this, HistoryActivity::class.java))
+                    val intent = Intent(this, ResultActivity::class.java)
+                    intent.putExtra("score", viewModel.correctCount.value ?: 0)
+                    intent.putExtra("total", viewModel.totalQuestions)
+
+                    startActivity(intent)
                     finish()
                 }
             }

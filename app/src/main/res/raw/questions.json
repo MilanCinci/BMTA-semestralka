@@ -2,241 +2,721 @@
   {
     "category": "Historie",
     "question": "Ve kterém roce proběhla sametová revoluce v Československu, která ukončila vládu jedné strany?",
-    "options": ["1968", "1977", "1989", "1993"],
+    "options": [ "1968", "1977", "1989", "1993" ],
     "correctIndex": 2
   },
   {
     "category": "Historie",
     "question": "Který panovník je spojen s vydáním Zlaté buly sicilské v roce 1212?",
-    "options": ["Karel IV.", "Přemysl Otakar II.", "Václav I.", "Přemysl Otakar I."],
+    "options": [ "Karel IV.", "Přemysl Otakar II.", "Václav I.", "Přemysl Otakar I." ],
     "correctIndex": 3
   },
   {
     "category": "Historie",
     "question": "Kdy došlo k dobytí Konstantinopole Osmanskými Turky, což bývá často považováno za konec středověku?",
-    "options": ["1492", "1453", "1066", "1517"],
+    "options": [ "1492", "1453", "1066", "1517" ],
     "correctIndex": 1
   },
   {
     "category": "Historie",
     "question": "Kdo byl vůdcem husitského vojska a významným hejtmanem?",
-    "options": ["Jan Lucemburský", "Jiří z Poděbrad", "Jan Žižka z Trocnova", "Mikuláš z Pelhřimova"],
+    "options": [ "Jan Lucemburský", "Jiří z Poděbrad", "Jan Žižka z Trocnova", "Mikuláš z Pelhřimova" ],
     "correctIndex": 2
   },
   {
     "category": "Historie",
     "question": "Jak se jmenovala římská pevnost na Rýnu, která tvořila hranici Římské říše v Germánii?",
-    "options": ["Forum Romanum", "Akropolis", "Limes Germanicus", "Koloseum"],
+    "options": [ "Forum Romanum", "Akropolis", "Limes Germanicus", "Koloseum" ],
     "correctIndex": 2
   },
   {
     "category": "Historie",
     "question": "Kdo byl autorem Deklarace nezávislosti Spojených států amerických z roku 1776?",
-    "options": ["George Washington", "Benjamin Franklin", "Thomas Jefferson", "Abraham Lincoln"],
+    "options": [ "George Washington", "Benjamin Franklin", "Thomas Jefferson", "Abraham Lincoln" ],
     "correctIndex": 2
   },
   {
     "category": "Historie",
     "question": "Který starověký řecký filosof byl učitelem Alexandra Velikého?",
-    "options": ["Sokrates", "Platón", "Aristotelés", "Archimédés"],
+    "options": [ "Sokrates", "Platón", "Aristotelés", "Archimédés" ],
     "correctIndex": 2
   },
   {
     "category": "Historie",
     "question": "Ve kterém roce se Spojené státy americké zapojily do druhé světové války po útoku na Pearl Harbor?",
-    "options": ["1939", "1941", "1944", "1945"],
+    "options": [ "1939", "1941", "1944", "1945" ],
     "correctIndex": 1
   },
   {
     "category": "Historie",
     "question": "Která významná událost se odehrála v roce 1620 a vedla k nucené rekatolizaci českých zemí?",
-    "options": ["Třicetiletá válka", "Bitva na Bílé hoře", "Pražská defenestrace", "Selské povstání"],
+    "options": [ "Třicetiletá válka", "Bitva na Bílé hoře", "Pražská defenestrace", "Selské povstání" ],
     "correctIndex": 1
   },
   {
     "category": "Historie",
     "question": "Kdo byl prvním prezidentem Československa?",
-    "options": ["Edvard Beneš", "Tomáš Garrigue Masaryk", "Milan Rastislav Štefánik", "Klement Gottwald"],
+    "options": [ "Edvard Beneš", "Tomáš Garrigue Masaryk", "Milan Rastislav Štefánik", "Klement Gottwald" ],
     "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Kdo byl prvním prezidentem Spojených států amerických?",
+    "options": [ "Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Ve kterém století proběhla Francouzská revoluce?",
+    "options": [ "16. století", "17. století", "18. století", "19. století" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Jak se jmenoval slavný vojevůdce z Makedonie?",
+    "options": [ "Alexandr Veliký", "Julius Caesar", "Hannibal", "Leonidas" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Historie",
+    "question": "Která stavba je symbolem starověkého Říma?",
+    "options": [ "Akropolis", "Koloseum", "Pyramidy", "Stonehenge" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Kdy skončila druhá světová válka?",
+    "options": [ "1943", "1944", "1945", "1946" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Který kontinent byl objeven Evropany jako poslední?",
+    "options": [ "Afrika", "Amerika", "Austrálie", "Evropa" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Jak se přezdívalo Attilovi, slavnému vojevůdci hunské říše?",
+    "options": [ "Sjednotitel národů", "Bič Boží", "Ničitel", "Válečník Boží" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Historie",
+    "question": "Která událost zahájila druhou světovou válku?",
+    "options": [ "Útok na Pearl Harbor", "Napadení Polska", "Bitva o Británii", "Vylodění v Normandii" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Kdo byl známý český král a císař Svaté říše římské?",
+    "options": [ "Přemysl Otakar II.", "Karel IV.", "Jan Hus", "František Palacký" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Jak se nazývalo období rytířů a hradů?",
+    "options": [ "Pravěk", "Starověk", "Středověk", "Novověk" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Který vynález byl klíčový pro šíření knih?",
+    "options": [ "Papír", "Kompas", "Knihtisk", "Střelný prach" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Kdo byl vůdcem fašistické Itálie?",
+    "options": [ "Adolf Hitler", "Josip Tito", "Josif Stalin", "Benito Mussolini" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Jak se jmenovala slavná zeď rozdělující Berlín?",
+    "options": [ "Železná opona", "Velká čínská zeď", "Zeď nářků", "Berlínská zeď" ],
+    "correctIndex": 3
+  },
+  {
+    "category": "Historie",
+    "question": "Která říše postavila pyramidy v Gíze?",
+    "options": [ "Římská říše", "Řecká říše", "Egyptská říše", "Perská říše" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Jak se jmenoval objevitel Ameriky?",
+    "options": [ "Kryštof Kolumbus", "Vasco da Gama", "Kryštof Kolumbus", "Marco Polo" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Historie",
+    "question": "Který stát měl za symbol orla?",
+    "options": [ "Starověký Egypt", "Římská říše", "Sparta", "Athény" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Historie",
+    "question": "Jak se jmenoval první člověk na Měsíci?",
+    "options": [ "Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Ve kterém století žil Jan Hus?",
+    "options": [ "13. století", "14. století", "15. století", "16. století" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Kdo byl prvním prezidentem ČR?",
+    "options": [ "Václav Klaus", "Miloš Zeman", "Václav Havel", "Gustav Husák" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Historie",
+    "question": "Který stát byl centrem starověké demokracie?",
+    "options": [ "Řím", "Sparta", "Athény", "Kartágo" ],
+    "correctIndex": 2
   },
   {
     "category": "Geografie",
     "question": "Jaké je hlavní město České republiky?",
-    "options": ["Brno", "Praha", "Ostrava", "Plzeň"],
+    "options": [ "Brno", "Praha", "Ostrava", "Plzeň" ],
     "correctIndex": 1
   },
   {
     "category": "Geografie",
     "question": "Který kontinent je největší svou rozlohou?",
-    "options": ["Afrika", "Severní Amerika", "Asie", "Evropa"],
+    "options": [ "Afrika", "Severní Amerika", "Asie", "Evropa" ],
     "correctIndex": 2
   },
   {
     "category": "Geografie",
     "question": "Která řeka protéká Paříží?",
-    "options": ["Labe", "Rýn", "Seina", "Temže"],
+    "options": [ "Labe", "Rýn", "Seina", "Temže" ],
     "correctIndex": 2
   },
   {
     "category": "Geografie",
     "question": "Jak se nazývá nejvyšší hora světa?",
-    "options": ["K2", "Mont Blanc", "Mount Everest", "Aconcagua"],
+    "options": [ "K2", "Mont Blanc", "Mount Everest", "Aconcagua" ],
     "correctIndex": 2
   },
   {
     "category": "Geografie",
     "question": "Jaký je největší oceán na Zemi?",
-    "options": ["Atlantský", "Indický", "Tichý", "Severní ledový"],
+    "options": [ "Atlantský", "Indický", "Tichý", "Severní ledový" ],
     "correctIndex": 2
   },
   {
     "category": "Geografie",
     "question": "Která země je známá pro Velkou čínskou zeď?",
-    "options": ["Japonsko", "Indie", "Čína", "Thajsko"],
+    "options": [ "Japonsko", "Indie", "Čína", "Thajsko" ],
     "correctIndex": 2
   },
   {
     "category": "Geografie",
     "question": "Která země leží na sever od Spojených států amerických?",
-    "options": ["Mexiko", "Kanada", "Brazílie", "Grónsko"],
+    "options": [ "Mexiko", "Kanada", "Brazílie", "Grónsko" ],
     "correctIndex": 1
   },
   {
     "category": "Geografie",
     "question": "Co je zeměpisná šířka?",
-    "options": ["Vzdálenost od rovníku", "Vzdálenost od nultého poledníku", "Výška nad mořem", "Vzdálenost mezi kontinenty"],
+    "options": [ "Vzdálenost od rovníku", "Vzdálenost od nultého poledníku", "Výška nad mořem", "Vzdálenost mezi kontinenty" ],
     "correctIndex": 0
   },
   {
     "category": "Geografie",
     "question": "Jaká je měna Japonska?",
-    "options": ["Euro", "Yen", "Forint", "Peso"],
+    "options": [ "Euro", "Yen", "Forint", "Peso" ],
     "correctIndex": 1
   },
   {
     "category": "Geografie",
     "question": "Která poušť je největší na světě?",
-    "options": ["Gobi", "Atacama", "Kalahari", "Sahara"],
+    "options": [ "Gobi", "Atacama", "Kalahari", "Sahara" ],
     "correctIndex": 3
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaké je hlavní město Francie?",
+    "options": [ "Lyon", "Marseille", "Paříž", "Nice" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Na kterém kontinentu leží Česká republika?",
+    "options": [ "Asie", "Evropa", "Afrika", "Austrálie" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Geografie",
+    "question": "Které 2 řeky protékájí Brnem?",
+    "options": [ "Svratka a Svitava", "Vltava a Labe", "Morava a Dyje", "Svratka a Odra" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaké je hlavní město Německa?",
+    "options": [ "Mnichov", "Hamburk", "Berlín", "Frankfurt" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Který světadíl je nejmenší rozlohou?",
+    "options": [ "Evropa", "Austrálie", "Antarktida", "Jižní Amerika" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Geografie",
+    "question": "Který oceán leží mezi Evropou a Amerikou?",
+    "options": [ "Tichý", "Indický", "Atlantský", "Severní ledový" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaké je hlavní město Itálie?",
+    "options": [ "Milán", "Benátky", "Řím", "Florencie" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Která země má nejmenší rozlohu na světě?",
+    "options": [ "San Marino", "Vatikán", "Monako", "Černá hora" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaký je nejdelší veletok na světě?",
+    "options": [ "Amazonka", "Nil", "Mississippi", "Yang-c’-ťiang" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Geografie",
+    "question": "Které pohoří odděluje Evropu a Asii?",
+    "options": [ "Alpy", "Himaláje", "Ural", "Kavkaz" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaké je hlavní město Spojeného království?",
+    "options": [ "Manchester", "Liverpool", "Londýn", "Birmingham" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Který stát má největší rozlohu?",
+    "options": [ "Kanada", "Čína", "USA", "Rusko" ],
+    "correctIndex": 3
+  },
+  {
+    "category": "Geografie",
+    "question": "Na kterém kontinentu leží Egypt?",
+    "options": [ "Evropa", "Asie", "Afrika", "Austrálie" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaké je hlavní město Rumunska?",
+    "options": [ "Bělehrad", "Záhřeb", "Budapešť", "Bukurešť" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Který pól Země je chladnější?",
+    "options": [ "Severní pól", "Jižní pól", "Oba stejně", "Záleží na ročním období" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Geografie",
+    "question": "Jak se nazývá čára dělící Zemi na severní a jižní polokouli?",
+    "options": [ "Obratník Raka", "Poledník", "Rovník", "Polární kruh" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Která země má hlavní město Tokio?",
+    "options": [ "Čína", "Jižní Korea", "Japonsko", "Thajsko" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Které moře omývá pobřeží Chorvatska?",
+    "options": [ "Černé", "Baltské", "Jaderské", "Středozemní" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Geografie",
+    "question": "Jaký je hlavní jazyk Brazílie?",
+    "options": [ "Španělština", "Portugalština", "Angličtina", "Francouzština" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Geografie",
+    "question": "Který kontinent leží celý na jižní polokouli?",
+    "options": [ "Afrika", "Jižní Amerika", "Austrálie", "Asie" ],
+    "correctIndex": 2
   },
   {
     "category": "IT",
     "question": "Co je zkratka CPU?",
-    "options": ["Central Power Unit", "Central Processing Unit", "Computer Program Utility", "Core Performance Update"],
+    "options": [ "Central Power Unit", "Central Processing Unit", "Computer Program Utility", "Core Performance Update" ],
     "correctIndex": 1
   },
   {
     "category": "IT",
     "question": "Který z následujících jazyků je primárně používán pro stylování webových stránek?",
-    "options": ["HTML", "JavaScript", "SQL", "CSS"],
+    "options": [ "HTML", "JavaScript", "SQL", "CSS" ],
     "correctIndex": 3
   },
   {
     "category": "IT",
     "question": "Jaký protokol se nejčastěji používá pro bezpečný přenos dat (šifrovaný) mezi webovým prohlížečem a serverem?",
-    "options": ["HTTP", "FTP", "SMTP", "HTTPS"],
+    "options": [ "HTTP", "FTP", "SMTP", "HTTPS" ],
     "correctIndex": 3
   },
   {
     "category": "IT",
     "question": "Co znamená zkratka RAM v kontextu počítačové paměti?",
-    "options": ["Read-Only Memory", "Random Access Memory", "Rapid Application Module", "Remote Access Mechanism"],
+    "options": [ "Read-Only Memory", "Random Access Memory", "Rapid Application Module", "Remote Access Mechanism" ],
     "correctIndex": 1
   },
   {
     "category": "IT",
     "question": "Která z následujících databázových technologií je relační (SQL)?",
-    "options": ["MongoDB", "Redis", "PostgreSQL", "Cassandra"],
+    "options": [ "MongoDB", "Redis", "PostgreSQL", "Cassandra" ],
     "correctIndex": 2
   },
   {
     "category": "IT",
     "question": "Co je 'kompilátor' v programování?",
-    "options": ["Program pro spouštění kódu po řádcích", "Program pro testování kódu", "Program pro přeložení zdrojového kódu do strojového kódu", "Editor pro psaní kódu"],
+    "options": [ "Program pro spouštění kódu po řádcích", "Program pro testování kódu", "Program pro přeložení zdrojového kódu do strojového kódu", "Editor pro psaní kódu" ],
     "correctIndex": 2
   },
   {
     "category": "IT",
     "question": "Jaký port je standardně používán pro HTTP komunikaci?",
-    "options": ["21", "25", "80", "443"],
+    "options": [ "21", "25", "80", "443" ],
     "correctIndex": 2
   },
   {
     "category": "IT",
     "question": "Který typ úložiště je nejrychlejší a používá se pro krátkodobé ukládání dat, se kterými CPU právě pracuje?",
-    "options": ["Pevný disk (HDD)", "SSD", "Operační paměť (RAM)", "Cloudové úložiště"],
+    "options": [ "Pevný disk (HDD)", "SSD", "Operační paměť (RAM)", "Cloudové úložiště" ],
     "correctIndex": 2
   },
   {
     "category": "IT",
     "question": "Co znamená termín 'Open Source'?",
-    "options": ["Software, který je zdarma k použití", "Software, jehož zdrojový kód je volně dostupný", "Software, který funguje pouze na Linuxu", "Software vyvíjený jednou společností"],
+    "options": [ "Software, který je zdarma k použití", "Software, jehož zdrojový kód je volně dostupný", "Software, který funguje pouze na Linuxu", "Software vyvíjený jednou společností" ],
     "correctIndex": 1
   },
   {
     "category": "IT",
     "question": "Jaká je základní jednotka informace v počítači, která může nabývat hodnot 0 nebo 1?",
-    "options": ["Byte", "Kilobyte", "Bit", "Nibble"],
+    "options": [ "Byte", "Kilobyte", "Bit", "Nibble" ],
     "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Co je operační systém?",
+    "options": [ "Program pro psaní textů", "Základní software řídící chod počítače", "Počítačová hra", "Internetový prohlížeč" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Který z následujících není programovací jazyk?",
+    "options": [ "R", "ADA", "Kotlin", "MyABS" ],
+    "correctIndex": 3
+  },
+  {
+    "category": "IT",
+    "question": "Co znamená zkratka URL?",
+    "options": [ "Universal Resource Locator", "Unified Remote Link", "User Registered Location", "Uniform Routing Line" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "IT",
+    "question": "K čemu slouží webový prohlížeč?",
+    "options": [ "K psaní programů", "K prohlížení webových stránek", "K ukládání souborů", "K ochraně počítače" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Který z těchto programů je určen pro úpravu fotek?",
+    "options": [ "LaTeX", "Photoshop", "Excel", "Visual Studio" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Co je to firewall?",
+    "options": [ "Typ viru", "Hardwarová součást počítače", "Bezpečnostní ochrana sítě", "Internetový protokol" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Které zařízení slouží ke vstupu dat do počítače?",
+    "options": [ "Monitor", "Tiskárna", "Klávesnice", "Reproduktor" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Co je to e-mail?",
+    "options": [ "Počítačový virus", "Elektronická pošta", "Webová stránka", "Textový editor" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Co jsou to I/O zařízení?",
+    "options": [ "Input/Output", "In-service/Outdated", "Informative/Outdated", "Improving/Outperforming" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "IT",
+    "question": "Co je to počítačový virus?",
+    "options": [ "Hardwarová porucha", "Program poškozující systém", "Program zlepšující výkon", "Internetový protokol" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Která jednotka se používá pro velikost souborů?",
+    "options": [ "Volt", "Hertz", "Byte", "Watt" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Co znamená zkratka USB?",
+    "options": [ "Universal Serial Bus", "Universal Service Bag", "Unique Service Book", "Unique Secret Byte" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "IT",
+    "question": "Co znamená zkratka PC?",
+    "options": [ "Program Controller", "Personal Computer", "Private Connection", "Primary Code" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Který z těchto není název operačního systému?",
+    "options": [ "Windows", "Firefox", "Linux", "Chrome OS" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Co je to soubor?",
+    "options": [ "Fyzická paměť počítače", "Počítačový program", "Internetové připojení", "Uložená data v počítači" ],
+    "correctIndex": 3
+  },
+  {
+    "category": "IT",
+    "question": "Který z těchto formátů je obrázek?",
+    "options": [ "MP3", "JPG", "TXT", "PDF" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "IT",
+    "question": "Co slouží k ovládání kurzoru na obrazovce?",
+    "options": [ "Klávesnice", "Tiskárna", "Myš", "Reproduktor" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Jak se nazývá přenosný počítač?",
+    "options": [ "Server", "Desktop", "Notebook", "Router" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Který program se používá pro psaní stylizovaných textů?",
+    "options": [ "Excel", "PowerPoint", "Word", "Chrome" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "IT",
+    "question": "Co je to internet?",
+    "options": [ "Jedna webová stránka", "Celosvětová síť počítačů", "Počítačový program", "Typ hardwaru" ],
+    "correctIndex": 1
   },
   {
     "category": "Literatura",
     "question": "Kdo napsal sbírku básní 'Máj'?",
-    "options": ["Karel Havlíček Borovský", "Karel Hynek Mácha", "Vítězslav Nezval", "Jaroslav Seifert"],
+    "options": [ "Karel Havlíček Borovský", "Karel Hynek Mácha", "Vítězslav Nezval", "Jaroslav Seifert" ],
     "correctIndex": 1
   },
   {
     "category": "Literatura",
     "question": "Který literární směr je spojen s autory jako je F. M. Dostojevskij a Honoré de Balzac?",
-    "options": ["Romantismus", "Realismus", "Symbolismus", "Expresionismus"],
+    "options": [ "Romantismus", "Realismus", "Symbolismus", "Expresionismus" ],
     "correctIndex": 1
   },
   {
     "category": "Literatura",
     "question": "Kdo je autorem románu 'Oliver Twist'?",
-    "options": ["George Bernard Shaw", "William Shakespeare", "Oscar Wilde", "Charles Dickens"],
+    "options": [ "George Bernard Shaw", "William Shakespeare", "Oscar Wilde", "Charles Dickens" ],
     "correctIndex": 3
   },
   {
     "category": "Literatura",
     "question": "Který český spisovatel je známý pro své antiutopické dílo 'Válka s Mloky'?",
-    "options": ["Jaroslav Hašek", "Karel Čapek", "Bohumil Hrabal", "Vladislav Vančura"],
+    "options": [ "Jaroslav Hašek", "Karel Čapek", "Bohumil Hrabal", "Vladislav Vančura" ],
     "correctIndex": 1
   },
   {
     "category": "Literatura",
     "question": "Jak se jmenuje hlavní hrdina románu 'Osudy dobrého vojáka Švejka za světové války'?",
-    "options": ["Josef Švejk", "Jan Hus", "Rudolf II.", "Pavel Landovský"],
+    "options": [ "Josef Švejk", "Jan Hus", "Rudolf II.", "Pavel Landovský" ],
     "correctIndex": 0
   },
   {
     "category": "Literatura",
     "question": "Která literární postava se zamilovala do mladého Romea v díle Williama Shakespeara?",
-    "options": ["Ofélie", "Barborka", "Julie", "Lucie"],
+    "options": [ "Ofélie", "Barborka", "Julie", "Lucie" ],
     "correctIndex": 2
   },
   {
     "category": "Literatura",
     "question": "V jakém období se odehrává děj románu 'Na západní frontě klid' od E. M. Remarqua?",
-    "options": ["Druhá světová válka", "První světová válka", "Vietnamská válka", "Válka v Koreji"],
+    "options": [ "Druhá světová válka", "První světová válka", "Vietnamská válka", "Válka v Koreji" ],
     "correctIndex": 1
   },
   {
     "category": "Literatura",
     "question": "Kdo z českých básníků získal Nobelovu cenu za literaturu?",
-    "options": ["Milan Kundera", "Karel Čapek", "Jaroslav Seifert", "Václav Havel"],
+    "options": [ "Milan Kundera", "Karel Čapek", "Jaroslav Seifert", "Václav Havel" ],
     "correctIndex": 2
   },
   {
     "category": "Literatura",
     "question": "Co je to sonet (znělka)?",
-    "options": ["Kratší próza s překvapivým závěrem", "Báseň s pevným počtem 14 veršů", "Divadelní hra pro jednoho herce", "Lidová píseň o lásce"],
+    "options": [ "Kratší próza s překvapivým závěrem", "Báseň s pevným počtem 14 veršů", "Divadelní hra pro jednoho herce", "Lidová píseň o lásce" ],
     "correctIndex": 1
   },
   {
     "category": "Literatura",
     "question": "Jak se jmenuje sbírka balad a pověstí od K. J. Erbena?",
-    "options": ["Písně kosmické", "Kytice", "Prodaná nevěsta", "Obrazy z dějin národa českého"],
+    "options": [ "Písně kosmické", "Kytice", "Prodaná nevěsta", "Obrazy z dějin národa českého" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Kdo je autorem románu 'Babička'?",
+    "options": [ "Božena Němcová", "Karolina Světlá", "Alois Jirásek", "Marie Majerová" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se jmenuje autor knihy 'Malý princ'?",
+    "options": [ "Victor Hugo", "Antoine de Saint-Exupéry", "Jules Verne", "Albert Camus" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Který literární druh zahrnuje romány a povídky?",
+    "options": [ "Lyrika", "Epika", "Drama", "Balada" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Kdo napsal dílo 'Petr a Lucie'?",
+    "options": [ "Charles Dickens", "Romain Rolland", "Oscar Wilde", "Karel Čapek" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se nazývá kratší epické dílo s jednoduchým dějem?",
+    "options": [ "Román", "Epos", "Povídka", "Tragédie" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Literatura",
+    "question": "Který český autor napsal 'Osudy dobrého vojáka Švejka'?",
+    "options": [ "Karel Čapek", "Josef Škvorecký", "Bohumil Hrabal", "Jaroslav Hašek" ],
+    "correctIndex": 3
+  },
+  {
+    "category": "Literatura",
+    "question": "Co je to lyrika?",
+    "options": [ "Literatura založená na ději", "Literatura vyjadřující pocity a nálady", "Divadelní tvorba", "Odborný text" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Které dílo napsal George Orwell?",
+    "options": [ "1984", "Proces", "Stařec a moře", "Na západní frontě klid" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se jmenuje autor knihy 'Harry Potter'?",
+    "options": [ "J. R. R. Tolkien", "J. K. Rowlingová", "Stephen King", "C. S. Lewis" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Který literární směr kladl důraz na city a fantazii?",
+    "options": [ "Realismus", "Romantismus", "Naturalismus", "Klasicismus" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se nazývá divadelní hra s tragickým koncem?",
+    "options": [ "Komedie", "Fraška", "Tragédie", "Epos" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Literatura",
+    "question": "Kdo je autorem románu 'Odysea'?",
+    "options": [ "Homér", "Ezop", "František Halas", "Stephen King" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se nazývá osoba, která je hlavní zápornou postavou?",
+    "options": [ "Protagonista", "Vypravěč", "Antagonista", "Posluchač" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Literatura",
+    "question": "Který autor napsal 'Na západní frontě klid'?",
+    "options": [ "Erich Maria Remarque", "Ernest Hemingway", "Franz Kafka", "Thomas Mann" ],
+    "correctIndex": 0
+  },
+  {
+    "category": "Literatura",
+    "question": "Co je to epilog?",
+    "options": [ "Úvod díla", "Závěr díla", "Hlavní část děje", "Vedlejší děj" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Který český autor napsal drama 'R.U.R.'?",
+    "options": [ "Václav Havel", "Karel Čapek", "Josef Topol", "Ivan Klíma" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se nazývá veršovaná literatura?",
+    "options": [ "Próza", "Drama", "Lyrika", "Reportáž" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Literatura",
+    "question": "Kdo je autorem knihy 'Pán prstenů'?",
+    "options": [ "C. S. Lewis", "J. R. R. Tolkien", "George R. R. Martin", "Terry Pratchett" ],
+    "correctIndex": 1
+  },
+  {
+    "category": "Literatura",
+    "question": "Jak se nazývá hlavní postava literárního díla?",
+    "options": [ "Autor", "Vypravěč", "Protagonista", "Antagonista" ],
+    "correctIndex": 2
+  },
+  {
+    "category": "Literatura",
+    "question": "Který literární směr je typický objektivním popisem skutečnosti?",
+    "options": [ "Romantismus", "Realismus", "Symbolismus", "Surrealismus" ],
     "correctIndex": 1
   }
 ]

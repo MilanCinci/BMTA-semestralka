@@ -15,7 +15,7 @@ import com.example.quizmaster.viewmodel.CategoryViewModel
  */
 class CategoryListActivity : AppCompatActivity()
 {
-    /** ViewModel poskytující seznam dostupných kategorií. */
+    /** ViewModel poskytující seznam dostupných kategorií */
     private lateinit var viewModel: CategoryViewModel
 
     /**

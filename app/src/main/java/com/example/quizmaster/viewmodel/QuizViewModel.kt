@@ -22,8 +22,11 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
     /** Repository pro načítání otázek a historie výsledků */
     private val repo = QuizRepository(context)
 
-    /** Seznam otázek, který je vyfiltrován podle zvolené kategorie. */
-    private val questions = repo.loadQuestions().filter { it.category == category }
+    /** Seznam 15 náhodných otázek, který je vyfiltrován podle zvolené kategorie */
+    private val questions = repo.loadQuestions()
+        .filter { it.category == category }
+        .shuffled()
+        .take(15)
 
     /** LiveData aktuálního indexu otázky */
     val currentIndex = MutableLiveData(0)
@@ -41,12 +44,7 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
      */
     fun getCurrentQuestion(): Question = questions[currentIndex.value!!]
 
-    /**
-     * Metoda slouží k vyhodnocování odpovědi uživatele a aktualizuje počet správných odpovědí.
-     * Posune se na další otázku, pokud ještě existuje
-     *
-     * @param selectedIndex Index odpovědi, kterou uživatel zvolil
-     */
+
     /**
      * Metoda slouží k vyhodnocování odpovědi uživatele a aktualizuje počet správných odpovědí.
      * Posune se na další otázku, pokud ještě existuje
@@ -69,17 +67,17 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
     /**
      * Metoda slouží k uložení výsledku aktuálního kvízu do historie
      */
-    fun saveResult()
-    {
+    fun saveResult() {
         val history = repo.loadHistory()
-        history.add(
-            QuizResult(
-                date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date()),
-                category = category,
-                score = correctCount.value!!,
-                total = questions.size
-            )
+
+        val newResult = QuizResult(
+            date = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault()).format(Date()),
+            category = category,
+            score = correctCount.value ?: 0,
+            total = questions.size
         )
+
+        history.add(newResult)
         repo.saveHistory(history)
     }
 }

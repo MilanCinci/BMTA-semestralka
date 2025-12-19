@@ -35,4 +35,15 @@
         android:layout_height="wrap_content"
         android:text="placeholder"/>
 
+    <TextView
+        android:id="@+id/questionCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1/15"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="18dp"/>
+
 </LinearLayout>

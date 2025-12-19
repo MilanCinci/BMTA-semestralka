@@ -5,32 +5,30 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmaster.R
-import com.example.quizmaster.repository.QuizRepository
+import com.example.quizmaster.viewmodel.HistoryViewModel
 
 /**
- * Aktivita zobrazující historii odehraných kvízů
+ * Aktivita zobrazující historii odehraných kvízů pomocí RecyclerView a ViewModelu
  */
 class HistoryActivity : AppCompatActivity()
 {
-    /**
-     * Metoda slouží k inicializaci RecyclerView a načte historii kvízů
-     *
-     * @param savedInstanceState Uložený stav aktivity
-     */
+    /** ViewModel pro načítání historie */
+    private lateinit var viewModel: HistoryViewModel
+
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
 
-        // RecyclerView pro zobrazení historie výsledků
+        // Inicializace ViewModelu
+        viewModel = HistoryViewModel(applicationContext)
+
         val recycler = findViewById<RecyclerView>(R.id.recyclerHistory)
         recycler.layoutManager = LinearLayoutManager(this)
 
-        // Repozitář pro práci s historií kvízů
-        val repo = QuizRepository(this)
-        val history = repo.loadHistory()
-
-        // Nastavení adapteru pro zobrazení historie
-        recycler.adapter = HistoryAdapter(history)
+        // Pozorování dat z ViewModelu
+        viewModel.historyRecords.observe(this) { history ->
+            recycler.adapter = HistoryAdapter(history)
+        }
     }
 }
