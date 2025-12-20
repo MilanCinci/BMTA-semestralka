@@ -6,8 +6,29 @@
     android:layout_height="match_parent">
 
 
+    <TextView
+        android:id="@+id/headerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategorie"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <View
+        android:id="@+id/dividerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerCategories"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

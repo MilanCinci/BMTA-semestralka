@@ -28,6 +28,9 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
         .shuffled()
         .take(15)
 
+    /** Seznam pro ukládání uživatelových odpovědí */
+    private val userAnswers = MutableList(questions.size) { -1 }
+
     /** LiveData aktuálního indexu otázky */
     val currentIndex = MutableLiveData(0)
 
@@ -44,6 +47,19 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
      */
     fun getCurrentQuestion(): Question = questions[currentIndex.value!!]
 
+    /**
+     * Metoda slouží k vrácení seznamu vybraných 15 otázek
+     *
+     * @return Vrací aktuální seznam otázek
+     */
+    fun getQuestions(): List<Question> = questions
+
+    /**
+     * Metoda slouží k vrácení indexu odpovědí, které uživatel zvolil
+     *
+     * @return Vrací seznam indexů jednotlivých odpovědí
+     */
+    fun getUserAnswers(): List<Int> = userAnswers
 
     /**
      * Metoda slouží k vyhodnocování odpovědi uživatele a aktualizuje počet správných odpovědí.
@@ -53,6 +69,9 @@ class QuizViewModel(context: Context, private val category: String) : ViewModel(
      */
     fun answerQuestion(selectedIndex: Int)
     {
+        // Uložení volby uživatele do seznamu podle aktuálního indexu
+        userAnswers[currentIndex.value!!] = selectedIndex
+
         if (selectedIndex == getCurrentQuestion().correctIndex)
         {
             correctCount.value = correctCount.value!! + 1

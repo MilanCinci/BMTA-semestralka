@@ -8,12 +8,14 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizmaster.R
 import com.example.quizmaster.viewmodel.QuizViewModel
+import android.widget.ProgressBar
 
 /**
  * Aktivita zodpovědná za průběh kvízu. Zobrazuje otázky a odpovědi pro vybranou kategorii,
  * zpracovává odpovědi uživatele a je zodpovědná za správu výsledků kvízu
  */
-class QuizActivity : AppCompatActivity() {
+class QuizActivity : AppCompatActivity()
+{
 
     /** ViewModel obsahující logiku kvízu */
     private lateinit var viewModel: QuizViewModel
@@ -24,7 +26,8 @@ class QuizActivity : AppCompatActivity() {
      *
      * @param savedInstanceState Uložený stav aktivity
      */
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
@@ -39,6 +42,11 @@ class QuizActivity : AppCompatActivity() {
 
         // TextView pro zobrazení textu otázky
         val questionText = findViewById<TextView>(R.id.questionText)
+
+        val progressBar = findViewById<ProgressBar>(R.id.quizProgressBar)
+
+        // Nastavíme maximum podle počtu otázek ve ViewModelu
+        progressBar.max = viewModel.totalQuestions
 
         // Seznam tlačítek pro odpovědi
         val buttons = listOf<Button>(
@@ -58,6 +66,9 @@ class QuizActivity : AppCompatActivity() {
             // Aktualizace počítadla (např. 3 / 15)
             val currentNumber = (viewModel.currentIndex.value ?: 0) + 1
             questionCounter.text = "$currentNumber / ${viewModel.totalQuestions}"
+
+            // Aktualizace progress baru
+            progressBar.progress = currentNumber
 
             buttons.forEachIndexed { index, button ->
                 if (index < q.options.size)
@@ -92,6 +103,8 @@ class QuizActivity : AppCompatActivity() {
                     val intent = Intent(this, ResultActivity::class.java)
                     intent.putExtra("score", viewModel.correctCount.value ?: 0)
                     intent.putExtra("total", viewModel.totalQuestions)
+                    intent.putExtra("questions_list", ArrayList(viewModel.getQuestions()))
+                    intent.putExtra("user_answers", viewModel.getUserAnswers().toIntArray())
 
                     startActivity(intent)
                     finish()
