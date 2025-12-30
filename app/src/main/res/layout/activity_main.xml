@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,59 +19,69 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QuizMaster"
-            android:textSize="48sp"
+            android:textSize="50sp"
             android:textStyle="bold"
+            android:letterSpacing="0.1"
             android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnCategories"
-            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginTop="64dp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vyzkoušej své znalosti v různých kategoriích"
+            android:textSize="16sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="32dp" />
+            app:layout_constraintTop_toBottomOf="@id/titleQuizMaster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/btnCategories"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="Hrát"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:padding="16dp"
-            android:textSize="20sp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@id/subtitle"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/titleQuizMaster"
-            app:layout_constraintBottom_toTopOf="@id/btnHistory"
-            android:layout_marginBottom="16dp" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Button
             android:id="@+id/btnHistory"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="Historie"
+            android:textSize="18sp"
+            android:textStyle="bold"
             android:padding="16dp"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@id/btnCategories"
-            app:layout_constraintBottom_toTopOf="@id/btnDarkModeToggle"
-            android:layout_marginBottom="32dp" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
+        <!-- DARK MODE BUTTON -->
         <ImageButton
             android:id="@+id/btnDarkModeToggle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minWidth="48dp"
-            android:minHeight="48dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:src="@drawable/ic_moon"
             android:contentDescription="Tmavý režim"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:padding="8dp"
+            android:padding="14dp"
             app:tint="?android:attr/textColorPrimary"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/btnHistory"
-            android:layout_marginTop="28dp"
-            android:layout_marginBottom="8dp" />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

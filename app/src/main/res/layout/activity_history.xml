@@ -3,31 +3,37 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp">
 
     <TextView
         android:id="@+id/headerHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Historie"
-        android:gravity="center"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="12dp"
-        android:textSize="42sp"
+        android:textSize="36sp"
         android:textStyle="bold"
-        android:textColor="?android:attr/textColorPrimary" />
+        android:textColor="?android:attr/textColorPrimary"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
 
-    <View
-        android:id="@+id/dividerHistory"
+    <TextView
+        android:id="@+id/subtitleHistory"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="?android:attr/listDivider"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_height="wrap_content"
+        android:text="Přehled odehraných her"
+        android:textSize="15sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerHistory"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
 
 </LinearLayout>

@@ -718,5 +718,97 @@
     "question": "Který literární směr je typický objektivním popisem skutečnosti?",
     "options": [ "Romantismus", "Realismus", "Symbolismus", "Surrealismus" ],
     "correctIndex": 1
+  },
+
+  {
+    "category": "Fotbal",
+    "question": "Který tým vyhrál Mistrovství světa ve fotbale v roce 2018?",
+    "options": ["Brazílie", "Francie", "Německo", "Argentina"],
+    "correctIndex": 1
+  },
+  {
+    "category": "Fotbal",
+    "question": "Kdo drží rekord za nejvíce gólů na Mistrovství světa?",
+    "options": ["Miroslav Klose", "Pelé", "Ronaldo", "Lionel Messi"],
+    "correctIndex": 0
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který klub získal nejvíce titulů v anglické Premier League?",
+    "options": ["Liverpool", "Chelsea", "Manchester United", "Arsenal"],
+    "correctIndex": 2
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který hráč je znám jako 'CR7'?",
+    "options": ["Lionel Messi", "Cristiano Ronaldo", "Neymar", "Kylian Mbappé"],
+    "correctIndex": 1
+  },
+  {
+    "category": "Fotbal",
+    "question": "Ve kterém roce se konalo první Mistrovství Evropy ve fotbale?",
+    "options": ["1958", "1960", "1964", "1970"],
+    "correctIndex": 1
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který tým vyhrál Ligu mistrů UEFA v roce 2022?",
+    "options": ["Liverpool", "Real Madrid", "Manchester City", "Bayern Mnichov"],
+    "correctIndex": 1
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který hráč je rekordmanem za nejvíce zlatých míčů?",
+    "options": ["Cristiano Ronaldo", "Lionel Messi", "Zinedine Zidane", "Ronaldinho"],
+    "correctIndex": 1
+  },
+  {
+    "category": "Fotbal",
+    "question": "Kolik hráčů má každý tým na hřišti během zápasu?",
+    "options": ["9", "10", "11", "12"],
+    "correctIndex": 2
+  },
+  {
+    "category": "Fotbal",
+    "question": "Jak se jmenuje nejvyšší italská fotbalová liga?",
+    "options": ["Serie A", "La Liga", "Bundesliga", "Premier League"],
+    "correctIndex": 0
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který národní tým je známý jako 'Squadra Azzurra'?",
+    "options": ["Itálie", "Francie", "Německo", "Španělsko"],
+    "correctIndex": 0
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který tým vyhrál Mistrovství světa ve fotbale v roce 2014?",
+    "options": ["Brazílie", "Německo", "Argentina", "Francie"],
+    "correctIndex": 1
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který hráč je nejmladším střelcem gólu na Mistrovství světa?",
+    "options": ["Pelé", "Lionel Messi", "Kylian Mbappé", "Diego Maradona"],
+    "correctIndex": 0
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který klub získal nejvíce titulů v Lize mistrů UEFA?",
+    "options": ["Barcelona", "AC Milan", "Real Madrid", "Liverpool"],
+    "correctIndex": 2
+  },
+  {
+    "category": "Fotbal",
+    "question": "Kdo je známý jako 'Fenomeno'?",
+    "options": ["Ronaldo Nazário", "Cristiano Ronaldo", "Ronaldinho", "Zlatan Ibrahimović"],
+    "correctIndex": 0
+  },
+  {
+    "category": "Fotbal",
+    "question": "Který tým vyhrál Evropskou ligu UEFA v roce 2021?",
+    "options": ["Villarreal", "Manchester United", "Sevilla", "Arsenal"],
+    "correctIndex": 0
   }
+
 ]

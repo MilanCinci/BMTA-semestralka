@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="24dp"
+    android:background="?android:attr/windowBackground">
 
+    <!-- Otázka a odpovědi -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,74 +17,94 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
 
+            <!-- Otázka -->
             <TextView
                 android:id="@+id/questionText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="26dp"
                 android:text="Otázka"
+                android:textSize="24sp"
+                android:textStyle="bold"
                 android:textColor="?android:attr/textColorPrimary"
-                android:textSize="22sp" />
+                android:gravity="center"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp" />
 
+            <!-- Odpovědi -->
             <Button
                 android:id="@+id/answerA"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="placeholder" />
+                android:layout_height="60dp"
+                android:text="Odpověď A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"
+                android:padding="12dp" />
 
             <Button
                 android:id="@+id/answerB"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="placeholder" />
+                android:layout_height="60dp"
+                android:text="Odpověď B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"
+                android:padding="12dp" />
 
             <Button
                 android:id="@+id/answerC"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="placeholder" />
+                android:layout_height="60dp"
+                android:text="Odpověď C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"
+                android:padding="12dp" />
 
             <Button
                 android:id="@+id/answerD"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="6dp"
-                android:text="placeholder" />
+                android:layout_height="60dp"
+                android:text="Odpověď D"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginVertical="8dp"
+                android:padding="12dp" />
 
         </LinearLayout>
     </ScrollView>
 
+    <!-- Progress a počítadlo -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp">
 
         <TextView
             android:id="@+id/questionCounter"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="center"
             android:text="1/15"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
 
         <ProgressBar
             android:id="@+id/quizProgressBar"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_height="8dp"
+            android:progress="1"
             android:max="15"
-            android:progress="1" />
+            android:progressTint="?android:attr/colorAccent"
+            android:layout_marginBottom="24dp"/>
     </LinearLayout>
 
 </LinearLayout>
