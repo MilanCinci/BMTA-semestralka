@@ -14,7 +14,8 @@ import com.example.quizmaster.viewmodel.MainViewModel
  * Hlavní aktivita aplikace. Zobrazuje menu a umožňuje navigaci do kategorií,
  * historie a přepínání tmavého režimu
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()
+{
 
     /** ViewModel pro správu logiky hlavního menu */
     private lateinit var viewModel: MainViewModel
@@ -52,12 +53,12 @@ class MainActivity : AppCompatActivity() {
             // Přepnutí režimu a vynucení restartu aktivity
             AppCompatDelegate.setDefaultNightMode(newMode)
 
-            // Pro jistotu použijeme intent pro čistý restart celé aktivity
+            // Použití intent pro čistý restart celé aktivity
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
 
-            // Odstraní bliknutí při přechodu
+            // Odstraní se bliknutí při přechodu
             overridePendingTransition(0, 0)
         }
     }

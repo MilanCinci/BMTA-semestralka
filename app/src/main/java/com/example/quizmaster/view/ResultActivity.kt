@@ -16,17 +16,19 @@ import com.example.quizmaster.viewmodel.ResultViewModel
 /**
  * Aktivita zodpovědná za zobrazení finálního vyhodnocení kvízu.
  * Zobrazuje procentuální úspěšnost, bodový zisk a detailní seznam
- * správných i špatných odpovědí uživatele.
+ * správných i špatných odpovědí uživatele
  */
-class ResultActivity : AppCompatActivity() {
+class ResultActivity : AppCompatActivity()
+{
 
     /** ViewModel pro logiku vyhodnocení úspěšnosti */
     private lateinit var viewModel: ResultViewModel
 
     /**
-     * Inicializuje UI prvky, načte data z předchozí aktivity a nastaví seznam výsledků.
+     * Inicializuje UI prvky, načte data z předchozí aktivity a nastaví seznam výsledků
      */
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
@@ -42,7 +44,7 @@ class ResultActivity : AppCompatActivity() {
         val questions = intent.getSerializableExtra("questions_list") as? ArrayList<Question> ?: arrayListOf()
         val userAnswers = intent.getIntArrayExtra("user_answers") ?: intArrayOf()
 
-        // Výpočet úspěšnosti v procentech skrze ViewModel
+        // Výpočet úspěšnosti v procentech
         val percentage = viewModel.calculatePercentage(score, total)
 
         // Propojení s UI prvky
@@ -61,15 +63,20 @@ class ResultActivity : AppCompatActivity() {
         ratioTextView.text = "Dosáhli jste $score z $total bodů"
 
         // Dynamická změna barvy procent podle úspěšnosti (zelená/červená)
-        if (viewModel.isSuccess(percentage)) {
+        if (viewModel.isSuccess(percentage))
+        {
             scoreTextView.setTextColor(ContextCompat.getColor(this, android.R.color.holo_green_dark))
-        } else {
+        }
+
+        else
+        {
             scoreTextView.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark))
         }
 
         // Tlačítko pro ukončení a návrat do hlavního menu
         findViewById<Button>(R.id.btnFinishResult).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+
             // Vyčištění historie aktivit, aby se uživatel nemohl vrátit tlačítkem zpět do hotového kvízu
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)

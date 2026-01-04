@@ -7,7 +7,6 @@ import android.content.Context
  */
 object JsonUtil
 {
-
     /**
      * Metoda slouží k načtení JSON souboru z raw resource složky a vrátí jeho obsah jako String
      *

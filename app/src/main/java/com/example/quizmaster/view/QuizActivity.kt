@@ -43,9 +43,10 @@ class QuizActivity : AppCompatActivity()
         // TextView pro zobrazení textu otázky
         val questionText = findViewById<TextView>(R.id.questionText)
 
+        // ProgressBar pro zobrazení stavu kvízu
         val progressBar = findViewById<ProgressBar>(R.id.quizProgressBar)
 
-        // Nastavíme maximum podle počtu otázek ve ViewModelu
+        // Nastavení maxima podle počtu otázek ve ViewModelu
         progressBar.max = viewModel.totalQuestions
 
         // Seznam tlačítek pro odpovědi
@@ -59,7 +60,8 @@ class QuizActivity : AppCompatActivity()
         /**
          * Metoda slouží k zobrazení aktuální otázky a nastavení textu odpovědí
          */
-        fun showQuestion() {
+        fun showQuestion()
+        {
             val q = viewModel.getCurrentQuestion()
             questionText.text = q.question
 

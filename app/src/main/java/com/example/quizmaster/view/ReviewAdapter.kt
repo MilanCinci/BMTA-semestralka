@@ -24,8 +24,8 @@ class ReviewAdapter(
     /**
      * ViewHolder pro jednotlivé položky seznamu výsledků
      */
-    // V ReviewAdapter.kt uvnitř třídy ViewHolder
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view)
+    {
         val question: TextView = view.findViewById(R.id.textReviewQuestion)
         val userAns: TextView = view.findViewById(R.id.textUserAnswer)
         val correctAns: TextView = view.findViewById(R.id.textCorrectAnswer)
