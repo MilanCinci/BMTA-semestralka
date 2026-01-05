@@ -809,6 +809,98 @@
     "question": "Který tým vyhrál Evropskou ligu UEFA v roce 2021?",
     "options": ["Villarreal", "Manchester United", "Sevilla", "Arsenal"],
     "correctIndex": 0
-  }
+  },
+
+    {
+      "category": "Matematika",
+      "question": "Kolik je 7 × 8?",
+      "options": ["54", "56", "58", "60"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Jaký je obvod čtverce se stranou 5 cm?",
+      "options": ["10 cm", "15 cm", "20 cm", "25 cm"],
+      "correctIndex": 2
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik stupňů má pravý úhel?",
+      "options": ["45", "90", "180", "360"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Co je 12 + 15?",
+      "options": ["25", "27", "28", "30"],
+      "correctIndex": 3
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik je 9²?",
+      "options": ["81", "72", "91", "99"],
+      "correctIndex": 0
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik centimetrů je 1 metr?",
+      "options": ["10", "100", "1000", "0,1"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Jaký je součet úhlů v trojúhelníku?",
+      "options": ["90°", "180°", "360°", "270°"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik je 15 ÷ 3?",
+      "options": ["3", "5", "6", "4"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Jak se nazývá číslo, které dělí jiné číslo beze zbytku?",
+      "options": ["Dělitel", "Součet", "Součin", "Zbytek"],
+      "correctIndex": 0
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik je 2³?",
+      "options": ["6", "8", "4", "12"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Jaký je průměr čísel 4, 8 a 12?",
+      "options": ["7", "8", "9", "10"],
+      "correctIndex": 2
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik je 50% z 200?",
+      "options": ["50", "100", "150", "200"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik stran má hexagon?",
+      "options": ["5", "6", "7", "8"],
+      "correctIndex": 1
+    },
+    {
+      "category": "Matematika",
+      "question": "Jak se nazývá číslo větší než nula, ale menší než jedna?",
+      "options": ["Celé číslo", "Záporné číslo", "Zlomkové číslo", "Přirozené číslo"],
+      "correctIndex": 2
+    },
+    {
+      "category": "Matematika",
+      "question": "Kolik je 100 – 37?",
+      "options": ["63", "73", "67", "57"],
+      "correctIndex": 0
+    }
+
 
 ]
