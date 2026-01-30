@@ -1,4 +1,4 @@
-# BMTA-semestralka_quiz
+# BMTA-semestralka_QuizMaster
 <br>
 <br>
 
